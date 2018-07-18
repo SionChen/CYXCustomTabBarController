@@ -25,7 +25,7 @@
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(11);
             make.left.and.right.equalTo(self);
-            make.bottom.equalTo(self).offset(-5);
+            make.top.equalTo(self).offset(35);
         }];
         __weak __typeof(self) _self = self;
         [self setTapActionWithBlock:^{
@@ -40,11 +40,13 @@
 -(void)updateImageAndTitle{
     self.titleLabel.text = self.title;
     if (self.selected) {
+        self.titleLabel.font = [UIFont systemFontOfSize:10.0];
         self.titleLabel.textColor = self.selectedTitleColor;
         if (self.selectedImage) {
             self.imageView.image = self.selectedImage;
         }
     }else{
+        self.titleLabel.font = [UIFont boldSystemFontOfSize:10.0];
         self.titleLabel.textColor = self.titleColor;
         if (self.image) {
             self.imageView.image = self.image;
@@ -60,7 +62,7 @@
         [self.imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.height.and.width.mas_equalTo(40);
             make.centerX.equalTo(self);
-            make.centerY.equalTo(self);
+            make.top.equalTo(self).offset(5);
         }];
     }
 }
@@ -74,7 +76,7 @@
 -(UILabel*)titleLabel{
     if(!_titleLabel){
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = [UIFont systemFontOfSize:11];
+        _titleLabel.font = [UIFont systemFontOfSize:10];
         _titleLabel.textColor = [UIColor grayColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }
