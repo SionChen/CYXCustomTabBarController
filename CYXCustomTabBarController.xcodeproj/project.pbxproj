@@ -29,6 +29,7 @@
 		55085AF020FD8F1500BF4ECB /* CYXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55085AEF20FD8F1500BF4ECB /* CYXTabBarItem.m */; };
 		55085AF320FD96DF00BF4ECB /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 55085AF220FD96DF00BF4ECB /* UIView+Size.m */; };
 		55085AF520FD9F2A00BF4ECB /* jmtIconBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 55085AF420FD9F2A00BF4ECB /* jmtIconBg.png */; };
+		5525A67E21BF8783007C2DDE /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5525A67D21BF8783007C2DDE /* plus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		55085AF120FD96DF00BF4ECB /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
 		55085AF220FD96DF00BF4ECB /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
 		55085AF420FD9F2A00BF4ECB /* jmtIconBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jmtIconBg.png; sourceTree = "<group>"; };
+		5525A67D21BF8783007C2DDE /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				55085AF420FD9F2A00BF4ECB /* jmtIconBg.png */,
+				5525A67D21BF8783007C2DDE /* plus.png */,
 				55085AC620FD8A2900BF4ECB /* Other */,
 				55085ABC20FD861400BF4ECB /* CustomTabbar */,
 				55085A9D20FD853200BF4ECB /* AppDelegate.h */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55085AAA20FD853A00BF4ECB /* LaunchScreen.storyboard in Resources */,
+				5525A67E21BF8783007C2DDE /* plus.png in Resources */,
 				55085AF520FD9F2A00BF4ECB /* jmtIconBg.png in Resources */,
 				55085AA720FD853A00BF4ECB /* Assets.xcassets in Resources */,
 				55085AA520FD853200BF4ECB /* Main.storyboard in Resources */,
@@ -412,7 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K999N3JYXU;
+				DEVELOPMENT_TEAM = RRQW8P957G;
 				INFOPLIST_FILE = CYXCustomTabBarController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K999N3JYXU;
+				DEVELOPMENT_TEAM = RRQW8P957G;
 				INFOPLIST_FILE = CYXCustomTabBarController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

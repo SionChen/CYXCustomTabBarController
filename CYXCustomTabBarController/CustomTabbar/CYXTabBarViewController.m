@@ -35,9 +35,9 @@
     expoVC.view.backgroundColor = [UIColor yellowColor];
     [viewControllers addObject:[self addChildViewController:expoVC title:@"家博会" imageNamed:@"tabBar_activity"]];
     
-    UIViewController *activityVC = [[UIViewController alloc] init];
-    activityVC.view.backgroundColor = [UIColor yellowColor];
-    [viewControllers addObject:[self addChildViewController:activityVC title:@"" imageNamed:@"tabBar_activity"]];
+//    UIViewController *activityVC = [[UIViewController alloc] init];
+//    activityVC.view.backgroundColor = [UIColor yellowColor];
+//    [viewControllers addObject:[self addChildViewController:activityVC title:@"" imageNamed:@"tabBar_activity"]];
     
     UIViewController *findVC = [[UIViewController alloc] init];
     findVC.view.backgroundColor = [UIColor blueColor];
@@ -76,6 +76,12 @@
         __weak __typeof(self) _self = self;
         _customTabBar.tabBarView.selectBlock = ^(NSInteger index) {
              _self.selectedIndex = index;
+        };
+        /*中间按钮*/
+        _customTabBar.tabBarView.haveCenterButton = YES;
+        _customTabBar.tabBarView.centerImage =[UIImage imageNamed:@"plus"];
+        _customTabBar.tabBarView.selectCenterBlock = ^{
+            NSLog(@"中间按钮点击了");
         };
     }
     return _customTabBar;

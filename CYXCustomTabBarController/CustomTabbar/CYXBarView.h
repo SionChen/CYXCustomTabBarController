@@ -23,4 +23,11 @@
 /*点击*/
 @property (nonatomic,strong) void(^selectBlock)(NSInteger index);
 @property (nonatomic, assign) NSInteger selectIndex;
+
+/*中间是否有按钮*/
+@property (nonatomic,assign) BOOL haveCenterButton;
+/*中间图片*/
+@property (nonatomic,copy) UIImage *centerImage;
+/*点击中间*/
+@property (nonatomic,strong) void(^selectCenterBlock)(void);
 @end
