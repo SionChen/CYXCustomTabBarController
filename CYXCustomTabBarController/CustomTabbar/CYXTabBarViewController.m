@@ -29,7 +29,7 @@
     NSMutableArray * viewControllers = [NSMutableArray new];
     UIViewController *homeVC = [[UIViewController alloc] init];
     homeVC.view.backgroundColor = [UIColor redColor];
-    [viewControllers addObject:[self addChildViewController:homeVC title:@"首页" imageNamed:@"tabBar_home"]];
+    [viewControllers addObject:[self addChildViewController:homeVC title:@"" imageNamed:@"tabBar_home"]];
     
     UIViewController *expoVC = [[UIViewController alloc] init];
     expoVC.view.backgroundColor = [UIColor yellowColor];
